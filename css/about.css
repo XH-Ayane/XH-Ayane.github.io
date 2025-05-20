@@ -1,0 +1,92 @@
+/* 个人头像样式 */
+.avatar-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* 技能进度条样式 */
+.skill-container {
+  margin: 1rem 0;
+}
+
+.skill-bar {
+  background: #f0f0f0;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(45deg, #6fa3ef, #9844b7);
+  border-radius: 10px;
+  transition: width 1s ease;
+  position: relative;
+}
+
+/* 社交媒体图标动画 */
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px);
+}
+
+/* 鼠标悬停特效 */
+.about-section {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 标题动画效果 */
+.about-title {
+  position: relative;
+  display: inline-block;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6fa3ef;
+  transition: width 0.3s ease;
+}
+
+.about-title:hover::after {
+  width: 100%;
+}
+
+/* 列表项动画 */
+.about-list li {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.about-list li:hover {
+  transform: translateX(10px);
+  color: #6fa3ef;
+}
