@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>背书大纲（面试用）[数据库部分] | XHAYANEの小屋</title><meta name="author" content="XH-Ayane"><meta name="copyright" content="XH-Ayane"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="早期博客创建时的记录和测试样式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="背书大纲（面试用）[数据库部分]">
+<meta property="og:url" content="http://xhayane.top/2025/07/07/%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E9%9D%A2%E8%AF%95%E7%94%A8%EF%BC%89[%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86]/index.html">
+<meta property="og:site_name" content="XHAYANEの小屋">
+<meta property="og:description" content="早期博客创建时的记录和测试样式">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png">
+<meta property="article:published_time" content="2025-07-07T13:26:05.000Z">
+<meta property="article:modified_time" content="2025-07-07T13:26:05.000Z">
+<meta property="article:author" content="XH-Ayane">
+<meta property="article:tag" content="小记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png"><link rel="shortcut icon" href="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png"><link rel="canonical" href="http://xhayane.top/2025/07/07/%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E9%9D%A2%E8%AF%95%E7%94%A8%EF%BC%89[%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86]/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: XH-Ayane","link":"链接: ","source":"来源: XHAYANEの小屋","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '背书大纲（面试用）[数据库部分]',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-07 13:26:05'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom.css"media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><span id="fps"></span><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 品味馆</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 快捷工具站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.runoob.com/"><i class="fa-fw fas fa-book-open-reader"></i><span> 菜鸟工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.fawncloud.one/auth/login"><i class="fa-fw fas fa-globe"></i><span> VPN</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://convertio.co/zh/"><i class="fa-fw fas fa-arrows-rotate"></i><span> 文件转换器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://markdown.com.cn/editor/"><i class="fa-fw fas fa-pen"></i><span> 在线makedown编辑器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fontawesome.com/icons?from=io"><i class="fa-fw fas fa-cube"></i><span> fontawesome</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://chatglm.cn/main/alltoolsdetail?lang=zh"><i class="fa-fw fas fa-globe"></i><span> 质谱轻言</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/11/05/Ilzbr3XJBLg9e4S.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="XHAYANEの小屋"><span class="site-name">XHAYANEの小屋</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 品味馆</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 快捷工具站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.runoob.com/"><i class="fa-fw fas fa-book-open-reader"></i><span> 菜鸟工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.fawncloud.one/auth/login"><i class="fa-fw fas fa-globe"></i><span> VPN</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://convertio.co/zh/"><i class="fa-fw fas fa-arrows-rotate"></i><span> 文件转换器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://markdown.com.cn/editor/"><i class="fa-fw fas fa-pen"></i><span> 在线makedown编辑器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fontawesome.com/icons?from=io"><i class="fa-fw fas fa-cube"></i><span> fontawesome</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://chatglm.cn/main/alltoolsdetail?lang=zh"><i class="fa-fw fas fa-globe"></i><span> 质谱轻言</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">背书大纲（面试用）[数据库部分]</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-07T13:26:05.000Z" title="发表于 2025-07-07 13:26:05">2025-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-07T13:26:05.000Z" title="更新于 2025-07-07 13:26:05">2025-07-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>18分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="这个没有先后顺序，就是个背书大纲（数据库专项部分）"><a href="#这个没有先后顺序，就是个背书大纲（数据库专项部分）" class="headerlink" title="这个没有先后顺序，就是个背书大纲（数据库专项部分）"></a>这个没有先后顺序，就是个背书大纲（数据库专项部分）</h1><ul>
+<li>彩色文字<br>在一段话中方便插入各种颜色的标签，包括：<span class='p red'>红色</span>、<span class='p yellow'>黄色</span>、<span class='p green'>绿色</span>、<span class='p cyan'>青色</span>、<span class='p blue'>蓝色</span>、<span class='p gray'>灰色</span>。</li>
+</ul>
+<p>不同的颜色以为意味这不同的重点度，红色最高，意味着出现频率越高</p>
+<p><strong>本文章基本为了快速通过面试和抽查，只收录了高频问题</strong></p>
+<h1 id="数据库部分-持续更新"><a href="#数据库部分-持续更新" class="headerlink" title="数据库部分(持续更新)"></a>数据库部分(持续更新)</h1><h2 id=""><a href="#" class="headerlink" title=""></a><span class='p red'>1、数据库存储引擎</span></h2><p>数据库存储引擎是数据库底层软件组织，数据库管理系统（DBMS）使用数据引擎进行创建、查询、更新和删除数据。不同的存储引擎提供<br>不同的存储机制、索引技巧、锁定水平等功能，使用不同的存储引擎，还可以 获得特定的功能。现在许多不同的数据库管理系统都支持多<br>种不同的数据引擎。存储引擎主要有： 1. MyIsam , 2. InnoDB, 3. Memory, 4. Archive, 5. Federated </p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><span class='p red'>索引</span></h2><p>索引（Index）是帮助 MySQL 高效获取数据的数据结构。 常见的查询算法,顺序查找,二分查找,二叉排序树查找,哈希散列法,分块查找,平衡多<br>路搜索树 B 树（B-tree） 索引是对数据库表中一个或多个列的值进行排序的结构，建立索引有助于快速获取信息。 </p>
+<p>可以背诵这个<span class='p yellow'>索引就是加快检索表中数据的方法。数据库的索引类似于书籍的索引。在书籍中，索引允许用户不必翻阅完整个书就能 迅速地找到所需要的信息。在数据库中，索引也允许数据库程序迅速地找到表中的数据，而不必扫描整个数据库</span></p>
+<p><strong>mysql 有4种不同的索引：</strong></p>
+<ul>
+<li><span class='p red'>主键索引（PRIMARY）</span></li>
+<li><span class='p red'>唯一索引（UNIQUE）</span></li>
+<li><span class='p red'>普通索引（INDEX）</span></li>
+<li><span class='p red'>全文索引（FULLTEXT）</span>
+</li>
+</ul>
+<p>注意背记<br><span class='p red'>索引并非是越多越好，创建索引也需要耗费资源，一是增加了数据库的存储空间，二是在插入和删除时要花费较多的时间维护索引 索引加快数据库的检索速度 索引降低了插入、删除、修改等维护任务的速度 唯一索引可以确保每一行数据的唯一性 通过使用索引，可以在查询的过程中使用优化隐藏器，提高系统的性能 索引需要占物理和数据空间</span></p>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><span class='p cyan'>数据库的三范式是什么</span></h2><ul>
+<li>第一范式：列不可再分</li>
+<li>第二范式：行可以唯一区分，主键约束</li>
+<li>第三范式：表的非主属性不能依赖与其他表的非主属性 外键约束<br>且三大范式是一级一级依赖的，第二范式建立在第一范式上，第三范式建立第一第二范式上 。</li>
+</ul>
+<h2 id="-3"><a href="#-3" class="headerlink" title=""></a><span class='p red'>数据库是事务</span></h2><p>事务(TRANSACTION)是作为单个逻辑工作单元执行的一系列操作， 这些操作作为一个整体一起向系统提交，要么都执行、要么都不执行 。<br>事务是一个不可分割的工作逻辑单元事务必须具备以下四个属性，简称 ACID 属性： </p>
+<p><strong>原子性</strong></p>
+<ol>
+<li>事务是一个完整的操作。事务的各步操作是不可分的（原子的）；要么都执行，要么都不执行。<br><strong>一致性</strong></li>
+<li>当事务完成时，数据必须处于一致状态。<br><strong>隔离性</strong></li>
+<li>对数据进行修改的所有并发事务是彼此隔离的， 这表明事务必须是独立的，它不应以任何方式依赖于或影响其他事务。<br><strong>永久性</strong></li>
+<li>事务完成后，它对数据库的修改被永久保持，事务日志能够保持事务的永久性</li>
+</ol>
+<h2 id="-4"><a href="#-4" class="headerlink" title=""></a><span class='p red'>SQL优化</span></h2><p>1、查询语句中不要使用select *<br>2、尽量减少子查询，使用关联查询（left join,right join,inner join）替代<br>3、减少使用IN或者NOT IN ,使用exists，not exists或者关联查询语句替代<br>4、or 的查询尽量用 union或者union all 代替(在确认没有重复数据或者不用剔除重复数据时，union all会更好)<br>5、应尽量避免在 where 子句中使用!=或&lt;&gt;<br>14、SQL优化<br>操作符，否则将引擎放弃使用索引而进行全表扫描。6、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如： select id from t where num<br>is null 可以在num上设置默认值0，确保表中num列没有null值，然后这样查询： select id from t where num=0</p>
+<h2 id="-5"><a href="#-5" class="headerlink" title=""></a><span class='p red'>什么是视图</span></h2><p>视图是一种虚拟的表，具有和物理表相同的功能。可以对视图进行增，改，查，操作，试图通常是有一个表或者多个表的行或列的子集。对视图的修改不影响基本表。它使得我们获取数据更容易，相比多表查询</p>
+<h2 id="-6"><a href="#-6" class="headerlink" title=""></a><span class='p red'>什么是内联接、左外联接、右外联接？</span></h2><ul>
+<li>内联接（Inner Join）：匹配2张表中相关联的记录。</li>
+<li>左外联接（Left Outer Join）：除了匹配2张表中相关联的记录外，还会匹配左表中剩余的记录，右表中未匹配到的字段用NULL表示。</li>
+<li>右外联接（Right Outer Join）：除了匹配2张表中相关联的记录外，还会匹配右表中剩余的记录，左表中未匹配到的字段用NULL表示。在判定左表和右表时，要根据表名出现在Outer Join的左右位置关系</li>
+</ul>
+<h2 id="-7"><a href="#-7" class="headerlink" title=""></a><span class='p cyan'>并发事务带来哪些问题</span></h2><p><strong>脏读（Dirty read）:</strong>当一个事务正在访问数据并且对数据进行了修改，而这种修改还没有提交到数据库中，这时另外一个事务也访问了这个数据，然后使用了这个数据。因为这个数据是还没有提交的数据，那么另外一个事务读到的这个数据是“脏数据”，依据“脏数据”所做的操作可能是不正确的。<br><strong>丢失修改（Lost to modify）:</strong>指在一个事务读取一个数据时，另外一个事务也访问了该数据，那么在第一个事务中修改了这个数据后，第二个事务也修改了这个数据。这样第一个事务内的修改结果就被丢失，因此称为丢失修。 例如：事务1读取某表中的数据A=20，事务2也读取A=20，事务1修改A=A-1，事务2也修改A=A-1，最终结果A=19，事务1的修改被丢失。<br><strong>不可重复读（Unrepeatableread）:</strong>指在一个事务内多次读同一数据。在这个事务还没有结束时，另一个事务也访问该数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改导致第一个事务两次读取的数据可能不太一样。这就发生了在一个事务内两次读到的数据是不一样的情况，因此称为不可重复读。<br><strong>幻读（Phantom read）:</strong>幻读与不可重复读类似。它发生在一个事务（T1）读取了几行数据，接着另一个并发事务（T2）插入了一些数据时。在随后的查询中，第一个事务（T1）就会发现多了一些原本不存在的记录，就好像发生了幻觉一样，所以称为幻读。<br><strong>不可重复读和幻读区别：</strong><br>不可重复读的重点是修改比如多次读取一条记录发现其中某些列的值被修改，幻读的重在于新增或者删除比如多次读取一条记录发现记录增多或减少了</p>
+<h2 id="-8"><a href="#-8" class="headerlink" title=""></a><span class='p red'>事务隔离级别有哪些?MySQL的默认隔离级别是?</span></h2><p>SQL 标准定义了四个隔离级别：<br><strong>READ-UNCOMMITTED(读取未提交)：</strong> 最低的隔离级别，允许读取尚未提交的数据变更，可能会导致脏读、幻读或不可重复读。<br><strong>READ-COMMITTED(读取已提交)：</strong> 允许读取并发事务已经提交的数据，可以阻止脏读，但是幻读或不可重复读仍有可能发生。<br><strong>REPEATABLE-READ(可重复读)：</strong> 对同一字段的多次读取结果都是一致的，除非数据是被本身事务自己所修改，可以阻止脏读和不可重复<br>读，但幻读仍有可能发生<br><strong>SERIALIZABLE(可串行化)：</strong> 最高的隔离级别，完全服从ACID的隔离级别。所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，该级别可以防止脏读、不可重复读以及幻读 </p>
+<h2 id="-9"><a href="#-9" class="headerlink" title=""></a><span class='p yellow'>大表如何优化？</span></h2><p>当MySQL单表记录数过大时，数据库的CRUD性能会明显下降，一些常见的优化措施如下：<br><strong>限定数据的范围</strong><br>务必禁止不带任何限制数据范围条件的查询语句。比如：我们当用户在查询订单历史候，我们可以控制在一个月的范围内；<br><strong>读/写分离</strong><br>经典的数据库拆分方案，主库负责写，从库负责读；<br><strong>垂直分区</strong><br>根据数据库里面数据表的相关性进行拆分。 例如，用户表中既有用户的登录信息又有用户的基本信息，可以将用户表拆分成两个单独的表，甚至放到单独的库做分库。</p>
+<h2 id="-10"><a href="#-10" class="headerlink" title=""></a><span class='p cyan'>MySQL 中有哪几种锁？</span></h2><p>1、表级锁：开销小，加锁快；不会出现死锁；锁定粒度大，发生锁冲突的概率最高，并发度最低。<br>2、行级锁：开销大，加锁慢；会出现死锁；锁定粒度最小，发生锁冲突的概率最低，并发度也最高。<br>3、页面锁：开销和加锁时间界于表锁和行锁之间；会出现死锁；锁定粒度界于表锁和行锁之间，并发度一般</p>
+<h2 id="-11"><a href="#-11" class="headerlink" title=""></a><span class='p green'>MySQL 中 InnoDB 支持的四种事务隔离级别名称，以及逐级之间的区别？</span></h2><p>SQL 标准定义的四个隔离级别为：<br>1、read uncommited ：读到未提交数据<br>2、read committed：脏读，不可重复读<br>3、repeatable read：可重读<br>4、serializable ：串行事物 </p>
+<h2 id="-12"><a href="#-12" class="headerlink" title=""></a><span class='p red'>CHAR 和 VARCHAR 的区别</span></h2><p>1、CHAR 和 VARCHAR 类型在存储和检索方面有所不同<br>2、CHAR 列长度固定为创建表时声明的长度，长度值范围是 1 到 255 当 CHAR值被存储时，它们被用空格填充到特定长度，检索 CHAR 值时需删除尾随空格。 </p>
+<h2 id="-13"><a href="#-13" class="headerlink" title=""></a><span class='p green'>MySQL 中 InnoDB 主键和候选键有什么区别？</span></h2><p>表格的每一行都由主键唯一标识,一个表只有一个主键。<br>主键也是候选键。按照惯例，候选键可以被指定为主键，并且可以用于任何外键引用。</p>
+<h2 id="-14"><a href="#-14" class="headerlink" title=""></a><span class='p green'>锁的优化策略</span></h2><p>1、读写分离<br>2、分段加锁<br>3、减少锁持有的时间<br>4.多个线程尽量以相同的顺序去获取资源不能将锁的粒度过于细化，不然可能会出现线程的加锁和释放次数过多，反而效率不如一次加一把大锁。 </p>
+<h2 id="（理解性记忆）"><a href="#（理解性记忆）" class="headerlink" title="（理解性记忆）"></a><span class='p yellow'>简单描述 MySQL 中，索引，主键，唯一索引，联合索引的区别，对数据库的性能有什么影响（从读写两方面）</span>（理解性记忆）</h2><p><strong>索引是一种特殊的文件</strong>(InnoDB 数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。<br><strong>普通索引</strong>(由关键字 KEY 或 INDEX 定义的索引)的唯一任务是加快对数据的访问速度。<br>普通索引允许被索引的数据列包含重复的值。如果能确定某个数据列将只包含彼此各不相同的值，在为这个数据列创建索引的时候就应该用<br><strong>关键字</strong> UNIQUE 把它定义为一个唯一索引。也就是说，唯一索引可以保证数据记录的唯一性。<br><strong>主键</strong>，是一种特殊的唯一索引，在一张表中只能定义一个主键索引，主键用于唯一标识一条记录，使用关键字 PRIMARY KEY 来创建。<br>索引可以覆盖多个数据列，如像 INDEX(columnA, columnB)索引，这就是联合索引。<br>索引可以极大的提高数据的查询速度，但是会降低插入、删除、更新表的速度，因为在执行这些写操作时，还要操作索引文件 </p>
+<h2 id="（和上面的某一个问题的趋同性）"><a href="#（和上面的某一个问题的趋同性）" class="headerlink" title="（和上面的某一个问题的趋同性）"></a><span class='p red'>数据库中的事务是什么?</span>（和上面的某一个问题的趋同性）</h2><p>事务（transaction）是作为一个单元的一组有序的数据库操作。如果组中的所有操作都成功，则认为事务成功，即使只有一个操作失败，事务也不成功。如果所有操作完成，事务则提交，其修改将作用于所有其他数据库进程。如果一个操作失败，则事务将回滚，该事务所有操作的影响都将取消。</p>
+<span class='p red'>事务特性：</span>
+<p>1、原子性：即不可分割性，事务要么全部被执行，要么就全部不被执行。<br>2、一致性或可串性。事务的执行使得数据库从一种正确状态转换成另一种正确状态<br>3、隔离性。在事务正确提交之前，不允许把该事务对数据的任何改变提供给任何其他事物<br>4、持久性。事务正确提交后，其结果将永久保存在数据库中，即使在事务提交后有了其他故障，事务的处理结果也会得到保存。</p>
+<blockquote>
+<p>事务就是被绑定在一起作为一个逻辑工作单元的 SQL 语句分组，如果任何一个语句操作失败那么整个操作就被失败，以后操作就会回滚到操作前状态，或者是上有个节点。为了确保要么执行，要么不执行，就可以使用事务。要将有组语句作为事务考虑，就需要通过 ACID 测试，即原子性，一致性，隔离性和持久性。</p>
+</blockquote>
+<h2 id="-15"><a href="#-15" class="headerlink" title=""></a><span class='p red'>SQL 注入漏洞产生的原因？如何防止？</span></h2><p>SQL 注入产生的原因：程序开发过程中不注意规范书写 sql 语句和对特殊字符进行过滤，导致客户端可以通过全局变量 POST 和 GET 提交<br>一些 sql 语句正常执行。<br>防止 SQL 注入的方式：<br>开启配置文件中的 magic_quotes_gpc 和 magic_quotes_runtime 设置 执行 sql 语句时使用 addslashes 进行 sql 语句转换<br>Sql 语句书写尽量不要省略双引号和单引号。<br>过滤掉 sql 语句中的一些关键词：update、insert、delete、select、 * 。<br>提高数据库表和字段的命名技巧，对一些重要的字段根据程序的特点命名，取不易被猜到的。 </p>
+<h2 id="-16"><a href="#-16" class="headerlink" title=""></a><span class='p yellow'>对于关系型数据库而言，索引是相当重要的概念，请回答有关索引的几个问题）</span></h2><p><strong>1、索引的目的是什么？</strong><br>快速访问数据表中的特定信息，提高检索速度<br>创建唯一性索引，保证数据库表中每一行数据的唯一性。<br>加速表和表之间的连接<br>使用分组和排序子句进行数据检索时，可以显著减少查询中分组和排序的时间<br><strong>2、索引对数据库系统的负面影响是什么？</strong><br>负面影响：<br>创建索引和维护索引需要耗费时间，这个时间随着数据量的增加而增加；索引需要占用物理空间，不光是表需要占用数据空间，每个索引也<br>需要占用物理空间；当对表进行增、删、改、的时候索引也要动态维护，这样就降低了数据的维护速度。<br><strong>3、为数据表建立索引的原则有哪些？</strong><br>在最频繁使用的、用以缩小查询范围的字段上建立索引。<br>在频繁使用的、需要排序的字段上建立索引<br><strong>4、什么情况下不宜建立索引？</strong><br>对于查询中很少涉及的列或者重复值比较多的列，不宜建立索引。<br>对于一些特殊的数据类型，不宜建立索引，比如文本字段（text）等 </p>
+<h2 id="-17"><a href="#-17" class="headerlink" title=""></a><span class='p yellow'>解释 MySQL 外连接、内连接与自连接的区别）</span></h2><p>先说什么是交叉连接: 交叉连接又叫笛卡尔积，它是指不使用任何条件，直接将一个表的所有记录和另一个表中的所有记录一一匹配。<br>内连接 则是只有条件的交叉连接，根据某个条件筛选出符合条件的记录，不符合条件的记录不会出现在结果集中，即内连接只连接匹配的行。<br>外连接 其结果集中不仅包含符合连接条件的行，而且还会包括左表、右表或两个表中的所有数据行，这三种情况依次称之为左外连接，右外连接，和全外连接。<br>左外连接，也称左连接，左表为主表，左表中的所有记录都会出现在结果集中，对于那些在右表中并没有匹配的记录，仍然要显示，右边对应的那些字段值以NULL 来填充。右外连接，也称右连接，右表为主表，右表中的所有记录都会出现在结果集中。左连接和右连接可以互换，MySQL 目前还不支持全外连接。</p>
+<h2 id="-18"><a href="#-18" class="headerlink" title=""></a><span class='p green'>Myql 中的事务回滚机制概述</span></h2><p>事务是用户定义的一个数据库操作序列，这些操作要么全做要么全不做，是一个不可分割的工作单位，事务回滚是指将该事务已经完成的对数据库的更新操作撤销。<br>要同时修改数据库中两个不同表时，如果它们不是一个事务的话，当第一个表修改完，可能第二个表修改过程中出现了异常而没能修改，此时就只有第二个表依旧是未修改之前的状态，而第一个表已经被修改完毕。而当你把它们设定为一个事务的时候，当第一个表修改完，第二<br>表修改出现异常而没能修改，第一个表和第二个表都要回到未修改的状态，这就是所谓的事务回滚 </p>
+<h2 id="-19"><a href="#-19" class="headerlink" title=""></a><span class='p red'>SQL SQL 语言包括哪几部分？每部分都有哪些操作关键</span></h2><p>SQL 语言包括数据定义(DDL)、数据操纵(DML),数据控制(DCL)和数据查询（DQL）四个部分。<br>数据定义：Create Table,Alter Table,Drop Table, Craete/Drop Index 等<br>数据操纵：Select ,insert,update,delete,<br>数据控制：grant,revoke<br>数据查询：select </p>
+<h2 id="-20"><a href="#-20" class="headerlink" title=""></a><span class='p yellow'>什么是锁？</span></h2><p>答：数据库是一个多用户使用的共享资源。当多个用户并发地存取数据时，在数据库中就会产生多个事务同时存取同一数据的情况。若对并发操作不加控制就可能会读取和存储不正确的数据，破坏数据库的一致性。<br>加锁是实现数据库并发控制的一个非常重要的技术。当事务在对某个数据对象进行操作前，先向系统发出请求，对其加锁。加锁后事务就对<br>该数据对象有了一定的控制，在该事务释放锁之前，其他的事务不能对此数据对象进行更新操作。<br><strong>基本锁类型：锁包括行级锁和表级锁</strong></p>
+<h2 id="-21"><a href="#-21" class="headerlink" title=""></a><span class='p red'>什么叫视图？游标是什么？</span></h2><p>视图是一种虚拟的表，具有和物理表相同的功能。可以对视图进行增，改，查，操作，视图通常是有一个表或者多个表的行或列的子集。对<br>视图的修改不影响基本表。它使得我们获取数据更容易，相比多表查询。<br>游标：是对查询出来的结果集作为一个单元来有效的处理。游标可以定在该单元中的特定行，从结果集的当前行检索一行或多行。可以对结<br>果集当前行做修改。一般不使用游标，但是需要逐条处理数据的时候，游标显得十分重要。</p>
+<h2 id="-22"><a href="#-22" class="headerlink" title=""></a><span class='p green'>试述视图的优点？</span></h2><p>(1) 视图能够简化用户的操作<br>(2) 视图使用户能以多种角度看待同一数据；<br>(3) 视图为数据库提供了一定程度的逻辑独立性；<br>(4) 视图能够对机密数据提供安全保护 </p>
+<h2 id="-23"><a href="#-23" class="headerlink" title=""></a><span class='p yellow'>主键、外键和索引的区别？</span></h2><p>主键、外键和索引的区别<br>定义 ：<br>主键–唯一标识一条记录，不能有重复的，不允许为空<br>外键–表的外键是另一表的主键, 外键可以有重复的, 可以是空值<br>索引–该字段没有重复值，但可以有一个空值<br>作用：<br>主键–用来保证数据完整性<br>外键–用来和其他表建立联系用的<br>索引–是提高查询排序的速度<br>个数：<br>主键–主键只能有一个<br>外键–一个表可以有多个外键<br>索引–一个表可以有多个唯一索引 </p>
+<h2 id="-24"><a href="#-24" class="headerlink" title=""></a><span class='p red'>说说对 SQL 语句优化有哪些方法？（选择几条）</span></h2><p>1、Where 子句中：where 表之间的连接必须写在其他 Where 条件之前，那些可以过滤掉最大数量记录的条件必须写在 Where 子句的末<br>尾.HAVING 最后。<br>2、用 EXISTS 替代 IN、用 NOT EXISTS 替代 NOT IN。<br>3、 避免在索引列上使用计算<br>4、避免在索引列上使用 IS NULL 和 IS NOT NULL<br>5、对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。<br>6、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描<br>7、应尽量避免在 where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描 </p>
+<h2 id="-25"><a href="#-25" class="headerlink" title=""></a><span class='p green'>什么是时间戳</span></h2><p>时间戳就是在数据库表中单独加一列时间戳，比如“TimeStamp”， 每次读出来的时候，把该字段也读出来，当写回去的时候，把该字段加<br>1，提交之前 ，跟数据库的该字段比较一次，如果比数据库的值大的话，就允许保存，否则不允许保存，这种处理方法虽然不使用数据库系统提供的锁机制，但是这种方法可以大大提高数据库处理的并发量，以上悲观锁所说的加“锁”，其实分为几种锁，分别是： 排它锁（写锁）<br>和共享锁（读锁） 。</p>
+<h2 id="-26"><a href="#-26" class="headerlink" title=""></a><span class='p green'>什么是行级锁</span></h2><p>行级锁是一种排他锁，防止其他事务修改此行；在使用以下语句时， Oracle 会自动应用行级锁：</p>
+<ol>
+<li>INSERT、 UPDATE、 DELETE、 SELECT … FOR UPDATE [OF columns] [WAIT n | NOWAIT];</li>
+<li>SELECT … FOR UPDATE 语句允许用户一次锁定多条记录进行更新</li>
+<li>使用 COMMIT 或 ROLLBACK 语句释放锁。</li>
+</ol>
+<h2 id="-27"><a href="#-27" class="headerlink" title=""></a><span class='p green'>什么是表级锁</span></h2><p>表示对当前操作的整张表加锁，它实现简单，资源消耗较少，被大部分 MySQL 引擎支持。最常使用的 MYISAM 与 INNODB 都支持表级锁<br>定。表级锁定分为表共享读锁（共享锁）与表独占写锁（排他锁）。 </p>
+<h2 id="-28"><a href="#-28" class="headerlink" title=""></a><span class='p green'>什么是页级锁</span></h2><p>页级锁是 MySQL 中锁定粒度介于行级锁和表级锁中间的一种锁。表级锁速度快，但冲突多，行级冲突少，但速度慢。所以取了折衷的页<br>级，一次锁定相邻的一组记录。 BDB 支持页级锁 </p>
+<p>—————————————-施工中———————————————</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://xhayane.top">XH-Ayane</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://xhayane.top/2025/07/07/%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E9%9D%A2%E8%AF%95%E7%94%A8%EF%BC%89[%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86]/">http://xhayane.top/2025/07/07/%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E9%9D%A2%E8%AF%95%E7%94%A8%EF%BC%89[%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86]/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xhayane.top" target="_blank">XHAYANEの小屋</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%B0%8F%E8%AE%B0/">小记</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/07/05/java%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8/" title="java面试宝典"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">java面试宝典</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2025/01/07/Spring%E6%A1%86%E6%9E%B6%E8%AF%B4%E4%BA%BA%E8%AF%9D%E7%89%88/" title="Spring框架说人话版"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-06</div><div class="title">Spring框架说人话版</div></div></a></div><div><a href="/2025/01/03/Spring%E6%A1%86%E6%9E%B6%E6%B1%87%E6%80%BB/" title="Spring框架汇总"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-02</div><div class="title">Spring框架汇总</div></div></a></div><div><a href="/2025/01/01/%E4%B9%A0%E6%A6%82%E5%A4%8D%E4%B9%A0%E6%80%BB%E8%A7%88/" title="习概复习总览"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-31</div><div class="title">习概复习总览</div></div></a></div><div><a href="/2025/01/02/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E8%80%83%E8%AF%95%E9%A2%98%E5%BA%93/" title="安卓开发考试题库"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-02</div><div class="title">安卓开发考试题库</div></div></a></div><div><a href="/2024/11/19/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA%E8%80%83%E8%AF%95%E9%87%8D%E7%82%B9%E5%8C%BA%E5%9F%9F/" title="毛泽东思想概论的考试重点"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-11-19</div><div class="title">毛泽东思想概论的考试重点</div></div></a></div><div><a href="/2024/12/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统考试方案大纲"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-29</div><div class="title">操作系统考试方案大纲</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XH-Ayane</div><div class="author-info__description">求知，探索，为自己放荡不羁的活着</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/178075368?spm_id_from=333.1007.0.0"><i></i><span>电波连接ing……</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/XH-Ayane" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://1398136448@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/178075368?spm_id_from=333.1007.0.0" target="_blank" title="bilbil"><i class="fab fa-bilibili" style="color: #FF66B2;"></i></a><a class="social-icon" href="https://www.pixiv.net/users/51121543" target="_blank" title="pixiv"><i class="fab fa-pixiv" style="color: #24292e;"></i></a><a class="social-icon" href="https://x.com/AyaneXh" target="_blank" title="twitter"><i class="fab fa-x-twitter" style="color: ;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome to my world.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%99%E4%B8%AA%E6%B2%A1%E6%9C%89%E5%85%88%E5%90%8E%E9%A1%BA%E5%BA%8F%EF%BC%8C%E5%B0%B1%E6%98%AF%E4%B8%AA%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%93%E9%A1%B9%E9%83%A8%E5%88%86%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">这个没有先后顺序，就是个背书大纲（数据库专项部分）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0"><span class="toc-number">2.</span> <span class="toc-text">数据库部分(持续更新)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">1、数据库存储引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.2.</span> <span class="toc-text">索引</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">2.3.</span> <span class="toc-text">数据库的三范式是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-3"><span class="toc-number">2.4.</span> <span class="toc-text">数据库是事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-4"><span class="toc-number">2.5.</span> <span class="toc-text">SQL优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-5"><span class="toc-number">2.6.</span> <span class="toc-text">什么是视图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-6"><span class="toc-number">2.7.</span> <span class="toc-text">什么是内联接、左外联接、右外联接？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-7"><span class="toc-number">2.8.</span> <span class="toc-text">并发事务带来哪些问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-8"><span class="toc-number">2.9.</span> <span class="toc-text">事务隔离级别有哪些?MySQL的默认隔离级别是?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-9"><span class="toc-number">2.10.</span> <span class="toc-text">大表如何优化？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-10"><span class="toc-number">2.11.</span> <span class="toc-text">MySQL 中有哪几种锁？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-11"><span class="toc-number">2.12.</span> <span class="toc-text">MySQL 中 InnoDB 支持的四种事务隔离级别名称，以及逐级之间的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-12"><span class="toc-number">2.13.</span> <span class="toc-text">CHAR 和 VARCHAR 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-13"><span class="toc-number">2.14.</span> <span class="toc-text">MySQL 中 InnoDB 主键和候选键有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-14"><span class="toc-number">2.15.</span> <span class="toc-text">锁的优化策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E7%90%86%E8%A7%A3%E6%80%A7%E8%AE%B0%E5%BF%86%EF%BC%89"><span class="toc-number">2.16.</span> <span class="toc-text">简单描述 MySQL 中，索引，主键，唯一索引，联合索引的区别，对数据库的性能有什么影响（从读写两方面）（理解性记忆）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E5%92%8C%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%9F%90%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%B6%8B%E5%90%8C%E6%80%A7%EF%BC%89"><span class="toc-number">2.17.</span> <span class="toc-text">数据库中的事务是什么?（和上面的某一个问题的趋同性）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-15"><span class="toc-number">2.18.</span> <span class="toc-text">SQL 注入漏洞产生的原因？如何防止？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-16"><span class="toc-number">2.19.</span> <span class="toc-text">对于关系型数据库而言，索引是相当重要的概念，请回答有关索引的几个问题）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-17"><span class="toc-number">2.20.</span> <span class="toc-text">解释 MySQL 外连接、内连接与自连接的区别）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-18"><span class="toc-number">2.21.</span> <span class="toc-text">Myql 中的事务回滚机制概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-19"><span class="toc-number">2.22.</span> <span class="toc-text">SQL SQL 语言包括哪几部分？每部分都有哪些操作关键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-20"><span class="toc-number">2.23.</span> <span class="toc-text">什么是锁？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-21"><span class="toc-number">2.24.</span> <span class="toc-text">什么叫视图？游标是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-22"><span class="toc-number">2.25.</span> <span class="toc-text">试述视图的优点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-23"><span class="toc-number">2.26.</span> <span class="toc-text">主键、外键和索引的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-24"><span class="toc-number">2.27.</span> <span class="toc-text">说说对 SQL 语句优化有哪些方法？（选择几条）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-25"><span class="toc-number">2.28.</span> <span class="toc-text">什么是时间戳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-26"><span class="toc-number">2.29.</span> <span class="toc-text">什么是行级锁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-27"><span class="toc-number">2.30.</span> <span class="toc-text">什么是表级锁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-28"><span class="toc-number">2.31.</span> <span class="toc-text">什么是页级锁</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/07/%E8%83%8C%E4%B9%A6%E5%A4%A7%E7%BA%B2%EF%BC%88%E9%9D%A2%E8%AF%95%E7%94%A8%EF%BC%89%5B%E6%95%B0%E6%8D%AE%E5%BA%93%E9%83%A8%E5%88%86%5D/" title="背书大纲（面试用）[数据库部分]">背书大纲（面试用）[数据库部分]</a><time datetime="2025-07-07T13:26:05.000Z" title="发表于 2025-07-07 13:26:05">2025-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/05/java%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8/" title="java面试宝典">java面试宝典</a><time datetime="2025-07-05T13:26:05.000Z" title="发表于 2025-07-05 13:26:05">2025-07-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/30/%E4%B8%80%E4%B8%AA%E7%9B%B8%E5%BD%93%E7%AE%80%E8%A6%81%E7%9A%84java%E8%A6%81%E7%82%B9%E6%80%BB%E7%BB%93/" title="一个相当简要的java要点总结">一个相当简要的java要点总结</a><time datetime="2025-06-30T13:26:05.000Z" title="发表于 2025-06-30 13:26:05">2025-06-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/25/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%883%EF%BC%89/" title="MySQL数据库系统学习笔记（3）">MySQL数据库系统学习笔记（3）</a><time datetime="2025-05-24T20:20:05.000Z" title="发表于 2025-05-24 20:20:05">2025-05-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/25/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%882%EF%BC%89/" title="MySQL数据库系统学习笔记（2）">MySQL数据库系统学习笔记（2）</a><time datetime="2025-05-24T20:13:05.000Z" title="发表于 2025-05-24 20:13:05">2025-05-24</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2024/11/05/Ilzbr3XJBLg9e4S.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By XH-Ayane</div><div class="footer_custom_text">Melancholy and silence define me, but I aim to be my own light.<p><a target="_blank" href="https://hexo.io/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script async src="/js/title.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="/js/fps.js"></script><script defer src="/js/cursor.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（1）</a><div class="blog-slider__text">涉及Java基础语法，注释，对象和类，基本数据类型</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查(2)/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查(2)/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（2）</a><div class="blog-slider__text">变量类型，变量命名规则，修饰符，运算符</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查(2)/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（3）</a><div class="blog-slider__text">循环结构，条件语句，switch case,Number&amp;Math,Character,String,StringBuffer几个方面</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（4）</a><div class="blog-slider__text">数组，日期时间，正则表达式，方法，构造方法，Stream和File和IO，scanner类，异常处理</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（5）</a><div class="blog-slider__text">Java面向对象部分的全部数据类型，继承，重载，多态，抽象类，封装，接口，枚举，包，反射</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --></body></html>
