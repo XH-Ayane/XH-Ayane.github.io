@@ -1,0 +1,601 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>开发常用命令速查 | XHAYANEの小屋</title><meta name="author" content="XH-Ayane"><meta name="copyright" content="XH-Ayane"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="自动化项目构建体系指令收藏集">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发常用命令速查">
+<meta property="og:url" content="http://xhayane.top/2025/07/24/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/index.html">
+<meta property="og:site_name" content="XHAYANEの小屋">
+<meta property="og:description" content="自动化项目构建体系指令收藏集">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png">
+<meta property="article:published_time" content="2025-07-24T14:25:00.000Z">
+<meta property="article:modified_time" content="2025-07-24T14:25:00.000Z">
+<meta property="article:author" content="XH-Ayane">
+<meta property="article:tag" content="自动化部署和命令脚本">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png"><link rel="shortcut icon" href="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png"><link rel="canonical" href="http://xhayane.top/2025/07/24/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: XH-Ayane","link":"链接: ","source":"来源: XHAYANEの小屋","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '开发常用命令速查',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-24 14:25:00'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom.css"media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><span id="fps"></span><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-paperclip"></i><span> 常用资源站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.com/"><i class="fa-fw fas fa-globe"></i><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://app.rainyun.com/auth/login"><i class="fa-fw fas fa-cloud"></i><span> 雨云云服务器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://smms.app/"><i class="fa-fw fas fa-inbox"></i><span> 在线图床</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 快捷工具站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.runoob.com/"><i class="fa-fw fas fa-book-open-reader"></i><span> 菜鸟工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.skyvpnx.com/"><i class="fa-fw fas fa-globe"></i><span> VPN</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://convertio.co/zh/"><i class="fa-fw fas fa-arrows-rotate"></i><span> 文件转换器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://markdown.com.cn/editor/"><i class="fa-fw fas fa-pen"></i><span> 在线makedown编辑器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fontawesome.com/icons?from=io"><i class="fa-fw fas fa-cube"></i><span> fontawesome</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/11/05/Ilzbr3XJBLg9e4S.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="XHAYANEの小屋"><span class="site-name">XHAYANEの小屋</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-paperclip"></i><span> 常用资源站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.com/"><i class="fa-fw fas fa-globe"></i><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://app.rainyun.com/auth/login"><i class="fa-fw fas fa-cloud"></i><span> 雨云云服务器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://smms.app/"><i class="fa-fw fas fa-inbox"></i><span> 在线图床</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 快捷工具站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.runoob.com/"><i class="fa-fw fas fa-book-open-reader"></i><span> 菜鸟工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.skyvpnx.com/"><i class="fa-fw fas fa-globe"></i><span> VPN</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://convertio.co/zh/"><i class="fa-fw fas fa-arrows-rotate"></i><span> 文件转换器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://markdown.com.cn/editor/"><i class="fa-fw fas fa-pen"></i><span> 在线makedown编辑器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fontawesome.com/icons?from=io"><i class="fa-fw fas fa-cube"></i><span> fontawesome</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">开发常用命令速查</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-24T14:25:00.000Z" title="发表于 2025-07-24 14:25:00">2025-07-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-24T14:25:00.000Z" title="更新于 2025-07-24 14:25:00">2025-07-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BB%93%E6%9E%84%E9%80%9F%E6%9F%A5/">结构速查</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>18分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="开发常用命令速查"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="npm常用命令"><a href="#npm常用命令" class="headerlink" title="npm常用命令"></a>npm常用命令</h1><h2 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h2><ul>
+<li><code>npm init</code> - 初始化项目，创建package.json文件</li>
+<li><code>npm init -y</code> - 快速初始化项目，使用默认配置</li>
+<li><code>npm install &lt;package&gt;</code> - 安装依赖包到项目</li>
+<li><code>npm install -g &lt;package&gt;</code> - 全局安装依赖包</li>
+<li><code>npm install &lt;package&gt; --save-dev</code> - 安装开发环境依赖</li>
+<li><code>npm install &lt;package&gt;@&lt;version&gt;</code> - 安装指定版本的依赖包</li>
+</ul>
+<h2 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h2><ul>
+<li><code>npm install</code> - 安装package.json中列出的所有依赖</li>
+<li><code>npm update</code> - 更新所有依赖到最新版本</li>
+<li><code>npm update &lt;package&gt;</code> - 更新指定依赖包</li>
+<li><code>npm uninstall &lt;package&gt;</code> - 卸载依赖包</li>
+<li><code>npm list</code> - 查看已安装的依赖包列表</li>
+<li><code>npm list -g</code> - 查看全局安装的依赖包</li>
+</ul>
+<h2 id="脚本执行"><a href="#脚本执行" class="headerlink" title="脚本执行"></a>脚本执行</h2><ul>
+<li><code>npm run &lt;script&gt;</code> - 运行package.json中定义的脚本</li>
+<li><code>npm start</code> - 运行start脚本（快捷方式）</li>
+<li><code>npm test</code> - 运行test脚本（快捷方式）</li>
+<li><code>npm run dev</code> - 通常用于启动开发服务器</li>
+<li><code>npm run build</code> - 通常用于构建生产版本</li>
+</ul>
+<h2 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul>
+<li><code>npm -v</code> - 查看npm版本</li>
+<li><code>npm info &lt;package&gt;</code> - 查看包的详细信息</li>
+<li><code>npm search &lt;keyword&gt;</code> - 搜索npm仓库</li>
+<li><code>npm cache clean --force</code> - 清除npm缓存</li>
+<li><code>npm audit</code> - 检查依赖安全问题</li>
+<li><code>npm audit fix</code> - 自动修复依赖安全问题</li>
+</ul>
+<h1 id="pip常用命令"><a href="#pip常用命令" class="headerlink" title="pip常用命令"></a>pip常用命令</h1><h2 id="基础操作-1"><a href="#基础操作-1" class="headerlink" title="基础操作"></a>基础操作</h2><ul>
+<li><code>pip install &lt;package&gt;</code> - 安装Python包</li>
+<li><code>pip install &lt;package&gt;==&lt;version&gt;</code> - 安装指定版本的Python包</li>
+<li><code>pip install --upgrade &lt;package&gt;</code> - 升级Python包</li>
+<li><code>pip uninstall &lt;package&gt;</code> - 卸载Python包</li>
+<li><code>pip show &lt;package&gt;</code> - 显示包的详细信息</li>
+</ul>
+<h2 id="批量操作"><a href="#批量操作" class="headerlink" title="批量操作"></a>批量操作</h2><ul>
+<li><code>pip install -r requirements.txt</code> - 从文件安装所有依赖</li>
+<li><code>pip freeze &gt; requirements.txt</code> - 将当前环境依赖导出到文件</li>
+<li><code>pip list</code> - 列出已安装的所有包</li>
+<li><code>pip list --outdated</code> - 列出可升级的包</li>
+</ul>
+<h2 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h2><ul>
+<li><code>python -m venv &lt;env_name&gt;</code> - 创建虚拟环境</li>
+<li><code>source &lt;env_name&gt;/bin/activate</code> - 激活虚拟环境(Linux/Mac)</li>
+<li><code>&lt;env_name&gt;\Scripts\activate</code> - 激活虚拟环境(Windows)</li>
+<li><code>deactivate</code> - 退出虚拟环境</li>
+</ul>
+<h2 id="其他常用命令-1"><a href="#其他常用命令-1" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul>
+<li><code>pip --version</code> - 查看pip版本</li>
+<li><code>pip help</code> - 查看pip帮助信息</li>
+<li><code>pip search &lt;package&gt;</code> - 搜索Python包</li>
+<li><code>pip cache purge</code> - 清除pip缓存</li>
+<li><code>pip check</code> - 检查安装的包是否有依赖冲突</li>
+</ul>
+<h1 id="Git-Bash常用命令"><a href="#Git-Bash常用命令" class="headerlink" title="Git Bash常用命令"></a>Git Bash常用命令</h1><h2 id="仓库操作"><a href="#仓库操作" class="headerlink" title="仓库操作"></a>仓库操作</h2><ul>
+<li><code>git init</code> - 初始化本地仓库</li>
+<li><code>git clone &lt;url&gt;</code> - 克隆远程仓库</li>
+<li><code>git add &lt;file&gt;</code> - 将文件添加到暂存区</li>
+<li><code>git add .</code> - 将所有修改添加到暂存区</li>
+<li><code>git commit -m &quot;message&quot;</code> - 提交暂存区到本地仓库</li>
+</ul>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><ul>
+<li><code>git branch</code> - 查看所有本地分支</li>
+<li><code>git branch &lt;branch_name&gt;</code> - 创建新分支</li>
+<li><code>git checkout &lt;branch_name&gt;</code> - 切换到指定分支</li>
+<li><code>git checkout -b &lt;branch_name&gt;</code> - 创建并切换到新分支</li>
+<li><code>git merge &lt;branch_name&gt;</code> - 将指定分支合并到当前分支</li>
+<li><code>git branch -d &lt;branch_name&gt;</code> - 删除本地分支</li>
+</ul>
+<h2 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h2><ul>
+<li><code>git remote add origin &lt;url&gt;</code> - 关联远程仓库</li>
+<li><code>git pull</code> - 拉取远程仓库更新</li>
+<li><code>git push -u origin &lt;branch&gt;</code> - 推送本地分支到远程</li>
+<li><code>git remote -v</code> - 查看远程仓库信息</li>
+<li><code>git fetch</code> - 获取远程仓库更新但不合并</li>
+</ul>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><ul>
+<li><code>git log</code> - 查看提交历史</li>
+<li><code>git log --oneline</code> - 简洁查看提交历史</li>
+<li><code>git reset --hard &lt;commit_id&gt;</code> - 回退到指定版本</li>
+<li><code>git stash</code> - 暂存工作区修改</li>
+<li><code>git stash pop</code> - 恢复最近的暂存修改</li>
+<li><code>git status</code> - 查看工作区状态</li>
+</ul>
+<h1 id="Windows-CMD常用命令"><a href="#Windows-CMD常用命令" class="headerlink" title="Windows CMD常用命令"></a>Windows CMD常用命令</h1><h2 id="基础操作-2"><a href="#基础操作-2" class="headerlink" title="基础操作"></a>基础操作</h2><ul>
+<li><code>cmd</code> - 打开命令提示符</li>
+<li><code>exit</code> - 退出命令提示符</li>
+<li><code>cls</code> - 清屏</li>
+<li><code>help</code> - 查看帮助信息</li>
+<li><code>command /?</code> - 查看特定命令的帮助</li>
+<li><code>echo &lt;text&gt;</code> - 显示文本</li>
+<li><code>title &lt;text&gt;</code> - 设置命令窗口标题</li>
+<li><code>color &lt;fg&gt;[&lt;bg&gt;]</code> - 设置窗口颜色（前景色和背景色）</li>
+</ul>
+<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><ul>
+<li><code>cd &lt;directory&gt;</code> - 切换目录</li>
+<li><code>cd ..</code> - 返回上一级目录</li>
+<li><code>cd /</code> - 返回到根目录</li>
+<li><code>dir</code> - 列出当前目录文件和子目录</li>
+<li><code>dir /a</code> - 列出所有文件（包括隐藏文件）</li>
+<li><code>mkdir &lt;directory&gt;</code> - 创建新目录</li>
+<li><code>rmdir &lt;directory&gt;</code> - 删除空目录</li>
+<li><code>rmdir /s /q &lt;directory&gt;</code> - 强制删除非空目录</li>
+<li><code>tree</code> - 显示目录结构树</li>
+</ul>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ul>
+<li><code>copy &lt;source&gt; &lt;destination&gt;</code> - 复制文件</li>
+<li><code>xcopy &lt;source&gt; &lt;destination&gt; /s</code> - 复制目录及子目录</li>
+<li><code>move &lt;source&gt; &lt;destination&gt;</code> - 移动或重命名文件/目录</li>
+<li><code>del &lt;file&gt;</code> - 删除文件</li>
+<li><code>del /s /q &lt;file&gt;</code> - 强制删除文件</li>
+<li><code>type &lt;file&gt;</code> - 显示文件内容</li>
+<li><code>more &lt;file&gt;</code> - 分页显示文件内容</li>
+<li><code>ren &lt;oldname&gt; &lt;newname&gt;</code> - 重命名文件/目录</li>
+<li><code>attrib &lt;file&gt;</code> - 查看或修改文件属性</li>
+<li><code>attrib +h &lt;file&gt;</code> - 隐藏文件</li>
+<li><code>attrib -h &lt;file&gt;</code> - 取消隐藏文件</li>
+</ul>
+<h2 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h2><ul>
+<li><code>systeminfo</code> - 显示系统信息</li>
+<li><code>ver</code> - 显示Windows版本</li>
+<li><code>hostname</code> - 显示主机名</li>
+<li><code>ipconfig</code> - 显示网络配置</li>
+<li><code>ipconfig /all</code> - 显示详细网络配置</li>
+<li><code>ping &lt;host&gt;</code> - 测试网络连接</li>
+<li><code>tracert &lt;host&gt;</code> - 跟踪路由</li>
+<li><code>tasklist</code> - 显示运行中的进程</li>
+<li><code>taskkill /pid &lt;pid&gt; /f</code> - 强制结束进程</li>
+</ul>
+<h2 id="网络操作"><a href="#网络操作" class="headerlink" title="网络操作"></a>网络操作</h2><ul>
+<li><code>netstat</code> - 显示网络连接状态</li>
+<li><code>net user</code> - 查看用户账户</li>
+<li><code>net share</code> - 查看共享资源</li>
+<li><code>arp -a</code> - 显示ARP缓存</li>
+<li><code>nslookup &lt;domain&gt;</code> - 域名解析</li>
+</ul>
+<h2 id="其他常用命令-2"><a href="#其他常用命令-2" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul>
+<li><code>path</code> - 显示或设置环境变量</li>
+<li><code>set</code> - 显示所有环境变量</li>
+<li><code>set &lt;variable&gt;=&lt;value&gt;</code> - 设置环境变量</li>
+<li><code>date</code> - 显示或设置日期</li>
+<li><code>time</code> - 显示或设置时间</li>
+<li><code>shutdown /s /t 0</code> - 立即关机</li>
+<li><code>shutdown /r /t 0</code> - 立即重启</li>
+<li><code>shutdown /a</code> - 取消关机</li>
+<li><code>sfc /scannow</code> - 系统文件检查</li>
+<li><code>chkdsk</code> - 检查磁盘错误</li>
+<li><code>diskpart</code> - 磁盘分区管理</li>
+<li><code>format &lt;drive&gt;:</code> - 格式化磁盘</li>
+</ul>
+<h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h2 id="基础操作-3"><a href="#基础操作-3" class="headerlink" title="基础操作"></a>基础操作</h2><ul>
+<li><code>ls</code> - 列出目录内容</li>
+<li><code>ls -la</code> - 列出所有文件（包括隐藏文件）并显示详细信息</li>
+<li><code>cd &lt;directory&gt;</code> - 切换目录</li>
+<li><code>cd ..</code> - 返回上一级目录</li>
+<li><code>cd /</code> - 返回到根目录</li>
+<li><code>pwd</code> - 显示当前工作目录</li>
+<li><code>mkdir &lt;directory&gt;</code> - 创建新目录</li>
+<li><code>rmdir &lt;directory&gt;</code> - 删除空目录</li>
+<li><code>touch &lt;file&gt;</code> - 创建空文件</li>
+<li><code>cp &lt;source&gt; &lt;destination&gt;</code> - 复制文件/目录</li>
+<li><code>mv &lt;source&gt; &lt;destination&gt;</code> - 移动或重命名文件/目录</li>
+<li><code>rm &lt;file&gt;</code> - 删除文件</li>
+<li><code>rm -rf &lt;directory&gt;</code> - 强制删除非空目录</li>
+<li><code>cat &lt;file&gt;</code> - 显示文件内容</li>
+<li><code>more &lt;file&gt;</code> - 分页显示文件内容</li>
+<li><code>less &lt;file&gt;</code> - 交互式查看文件内容</li>
+<li><code>head &lt;file&gt;</code> - 显示文件开头几行</li>
+<li><code>tail &lt;file&gt;</code> - 显示文件结尾几行</li>
+<li><code>tail -f &lt;file&gt;</code> - 实时监控文件更新</li>
+</ul>
+<h2 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h2><ul>
+<li><code>chmod &lt;permissions&gt; &lt;file&gt;</code> - 修改文件权限</li>
+<li><code>chmod +x &lt;file&gt;</code> - 给文件添加执行权限</li>
+<li><code>chown &lt;user&gt;:&lt;group&gt; &lt;file&gt;</code> - 更改文件所有者和组</li>
+<li><code>chgrp &lt;group&gt; &lt;file&gt;</code> - 更改文件所属组</li>
+<li><code>sudo &lt;command&gt;</code> - 以管理员权限执行命令</li>
+<li><code>su - &lt;user&gt;</code> - 切换用户</li>
+</ul>
+<h2 id="系统管理"><a href="#系统管理" class="headerlink" title="系统管理"></a>系统管理</h2><ul>
+<li><code>top</code> - 显示系统进程信息</li>
+<li><code>htop</code> - 交互式进程查看器（需要安装）</li>
+<li><code>ps</code> - 显示当前进程</li>
+<li><code>ps aux</code> - 显示所有进程详细信息</li>
+<li><code>kill &lt;pid&gt;</code> - 终止进程</li>
+<li><code>kill -9 &lt;pid&gt;</code> - 强制终止进程</li>
+<li><code>df -h</code> - 显示磁盘空间使用情况</li>
+<li><code>du -sh &lt;directory&gt;</code> - 显示目录大小</li>
+<li><code>free -h</code> - 显示内存使用情况</li>
+<li><code>uname -a</code> - 显示系统信息</li>
+<li><code>hostname</code> - 显示主机名</li>
+<li><code>date</code> - 显示或设置系统日期和时间</li>
+<li><code>cal</code> - 显示日历</li>
+<li><code>whoami</code> - 显示当前用户名</li>
+<li><code>users</code> - 显示当前登录的用户</li>
+</ul>
+<h2 id="网络操作-1"><a href="#网络操作-1" class="headerlink" title="网络操作"></a>网络操作</h2><ul>
+<li><code>ping &lt;host&gt;</code> - 测试网络连接</li>
+<li><code>ping -c 4 &lt;host&gt;</code> - 发送4个ping包后停止</li>
+<li><code>ifconfig</code> - 显示网络接口信息</li>
+<li><code>ip addr</code> - 显示网络接口信息（新版）</li>
+<li><code>netstat</code> - 显示网络连接状态</li>
+<li><code>netstat -tuln</code> - 显示监听的端口</li>
+<li><code>ss</code> - 显示网络连接状态（替代netstat）</li>
+<li><code>curl &lt;url&gt;</code> - 发送HTTP请求</li>
+<li><code>wget &lt;url&gt;</code> - 下载文件</li>
+<li><code>scp &lt;source&gt; &lt;destination&gt;</code> - 安全复制文件</li>
+<li><code>ssh &lt;user&gt;@&lt;host&gt;</code> - 远程登录</li>
+</ul>
+<h2 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h2><ul>
+<li><p><strong>Debian/Ubuntu</strong></p>
+<ul>
+<li><code>sudo apt update</code> - 更新软件包列表</li>
+<li><code>sudo apt upgrade</code> - 升级所有软件包</li>
+<li><code>sudo apt install &lt;package&gt;</code> - 安装软件包</li>
+<li><code>sudo apt remove &lt;package&gt;</code> - 卸载软件包</li>
+<li><code>sudo apt autoremove</code> - 自动移除不再需要的依赖</li>
+<li><code>sudo apt search &lt;keyword&gt;</code> - 搜索软件包</li>
+</ul>
+</li>
+<li><p><strong>CentOS/RHEL</strong></p>
+<ul>
+<li><code>sudo yum update</code> - 更新软件包</li>
+<li><code>sudo yum install &lt;package&gt;</code> - 安装软件包</li>
+<li><code>sudo yum remove &lt;package&gt;</code> - 卸载软件包</li>
+<li><code>sudo yum search &lt;keyword&gt;</code> - 搜索软件包</li>
+</ul>
+</li>
+<li><p><strong>Fedora</strong></p>
+<ul>
+<li><code>sudo dnf update</code> - 更新软件包</li>
+<li><code>sudo dnf install &lt;package&gt;</code> - 安装软件包</li>
+<li><code>sudo dnf remove &lt;package&gt;</code> - 卸载软件包</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件搜索与处理"><a href="#文件搜索与处理" class="headerlink" title="文件搜索与处理"></a>文件搜索与处理</h2><ul>
+<li><code>find &lt;directory&gt; -name &lt;pattern&gt;</code> - 按名称搜索文件</li>
+<li><code>grep &lt;pattern&gt; &lt;file&gt;</code> - 在文件中搜索字符串</li>
+<li><code>grep -r &lt;pattern&gt; &lt;directory&gt;</code> - 递归搜索目录中的字符串</li>
+<li><code>sed &#39;s/&lt;old&gt;/&lt;new&gt;/g&#39; &lt;file&gt;</code> - 替换文件中的字符串</li>
+<li><code>awk &#39;&#123;print $1&#125;&#39; &lt;file&gt;</code> - 处理文本文件中的列</li>
+<li><code>sort &lt;file&gt;</code> - 排序文件内容</li>
+<li><code>uniq</code> - 去除重复行</li>
+<li><code>diff &lt;file1&gt; &lt;file2&gt;</code> - 比较两个文件的差异</li>
+</ul>
+<h2 id="压缩与解压"><a href="#压缩与解压" class="headerlink" title="压缩与解压"></a>压缩与解压</h2><ul>
+<li><code>tar -cvf &lt;archive&gt;.tar &lt;files&gt;</code> - 创建tar归档</li>
+<li><code>tar -xvf &lt;archive&gt;.tar</code> - 解压tar归档</li>
+<li><code>tar -czvf &lt;archive&gt;.tar.gz &lt;files&gt;</code> - 创建gzip压缩的tar归档</li>
+<li><code>tar -xzvf &lt;archive&gt;.tar.gz</code> - 解压gzip压缩的tar归档</li>
+<li><code>tar -cjvf &lt;archive&gt;.tar.bz2 &lt;files&gt;</code> - 创建bzip2压缩的tar归档</li>
+<li><code>tar -xjvf &lt;archive&gt;.tar.bz2</code> - 解压bzip2压缩的tar归档</li>
+<li><code>zip &lt;archive&gt;.zip &lt;files&gt;</code> - 创建zip压缩文件</li>
+<li><code>unzip &lt;archive&gt;.zip</code> - 解压zip压缩文件</li>
+</ul>
+<h2 id="其他常用命令-3"><a href="#其他常用命令-3" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul>
+<li><code>echo &lt;text&gt;</code> - 显示文本</li>
+<li><code>alias &lt;name&gt;=&lt;command&gt;</code> - 创建命令别名</li>
+<li><code>history</code> - 显示命令历史</li>
+<li><code>clear</code> - 清屏</li>
+<li><code>man &lt;command&gt;</code> - 查看命令手册</li>
+<li><code>which &lt;command&gt;</code> - 显示命令的路径</li>
+<li><code>whereis &lt;command&gt;</code> - 显示命令及其相关文件的路径</li>
+<li><code>whatis &lt;command&gt;</code> - 显示命令的简要描述</li>
+<li><code>exit</code> - 退出终端</li>
+</ul>
+<h1 id="框架特定命令"><a href="#框架特定命令" class="headerlink" title="框架特定命令"></a>框架特定命令</h1><p>以下是常用开发框架的完整执行语句，涵盖从项目创建到部署的全流程。</p>
+<h2 id="Vue-js"><a href="#Vue-js" class="headerlink" title="Vue.js"></a>Vue.js</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Vue CLI</span></span><br><span class="line">npm install -g @vue/cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新项目</span></span><br><span class="line">vue create project-name</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用Vue 3 Vite创建项目</span></span><br><span class="line">npm create vite@latest project-name -- --template vue</span><br><span class="line"><span class="built_in">cd</span> project-name</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建生产版本</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装路由</span></span><br><span class="line">npm install vue-router@4</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装状态管理</span></span><br><span class="line">npm install pinia</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装Axios</span></span><br><span class="line">npm install axios</span><br></pre></td></tr></table></figure>
+<h2 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用Spring Initializr创建项目</span></span><br><span class="line">curl https://start.spring.io/starter.zip -d dependencies=web,data-jpa -d language=java -d <span class="built_in">type</span>=maven-project -o demo.zip</span><br><span class="line">unzip demo.zip</span><br><span class="line"><span class="built_in">cd</span> demo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用Maven构建</span></span><br><span class="line">./mvnw clean package</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行应用</span></span><br><span class="line">./mvnw spring-boot:run</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加依赖</span></span><br><span class="line"><span class="comment"># 在pom.xml中添加依赖后执行</span></span><br><span class="line">./mvnw dependency:resolve</span><br></pre></td></tr></table></figure>
+<h2 id="Vite"><a href="#Vite" class="headerlink" title="Vite"></a>Vite</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Vite (通常无需全局安装)</span></span><br><span class="line">npm create vite@latest</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建特定框架的项目</span></span><br><span class="line">npm create vite@latest my-vue-app -- --template vue</span><br><span class="line">npm create vite@latest my-react-app -- --template react</span><br><span class="line">npm create vite@latest my-vanilla-app -- --template vanilla</span><br><span class="line">npm create vite@latest my-svelte-app -- --template svelte</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> my-vue-app</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动开发服务器</span></span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建生产版本</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 预览构建结果</span></span><br><span class="line">npm run preview</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Vite</span></span><br><span class="line"><span class="comment"># 编辑vite.config.js文件自定义构建配置</span></span><br></pre></td></tr></table></figure>
+<h2 id="Docker常用命令"><a href="#Docker常用命令" class="headerlink" title="Docker常用命令"></a>Docker常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 构建镜像</span></span><br><span class="line">docker build -t my-image .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行容器</span></span><br><span class="line">docker run -p 8080:80 my-image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行容器(后台模式)</span></span><br><span class="line">docker run -d -p 8080:80 my-image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行中的容器</span></span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止容器</span></span><br><span class="line">docker stop &lt;container_id&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除容器</span></span><br><span class="line">docker <span class="built_in">rm</span> &lt;container_id&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除镜像</span></span><br><span class="line">docker rmi &lt;image_id&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line">docker pull &lt;image_name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用Docker Compose</span></span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<h1 id="数据库常用命令"><a href="#数据库常用命令" class="headerlink" title="数据库常用命令"></a>数据库常用命令</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装MySQL (Windows使用安装程序，Linux使用包管理器)</span></span><br><span class="line"><span class="comment"># Ubuntu/Debian</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install mysql-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS/RHEL</span></span><br><span class="line"><span class="built_in">sudo</span> yum install mysql-server</span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> systemctl start mysqld</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> mysqld</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化安全设置 (首次安装后)</span></span><br><span class="line"><span class="built_in">sudo</span> mysql_secure_installation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登录MySQL</span></span><br><span class="line">mysql -u root -p</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建数据库</span></span><br><span class="line">CREATE DATABASE mydb;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建用户并授权</span></span><br><span class="line">CREATE USER <span class="string">&#x27;myuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED BY <span class="string">&#x27;mypassword&#x27;</span>;</span><br><span class="line">GRANT ALL PRIVILEGES ON mydb.* TO <span class="string">&#x27;myuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span>;</span><br><span class="line">FLUSH PRIVILEGES;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 备份数据库</span></span><br><span class="line">mysqldump -u root -p mydb &gt; mydb_backup.sql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复数据库</span></span><br><span class="line">mysql -u root -p mydb &lt; mydb_backup.sql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有数据库</span></span><br><span class="line">SHOW DATABASES;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用数据库</span></span><br><span class="line">USE mydb;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有表</span></span><br><span class="line">SHOW TABLES;</span><br></pre></td></tr></table></figure>
+<h2 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装PostgreSQL</span></span><br><span class="line"><span class="comment"># Ubuntu/Debian</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install postgresql postgresql-contrib</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS/RHEL</span></span><br><span class="line"><span class="built_in">sudo</span> yum install postgresql-server</span><br><span class="line"><span class="built_in">sudo</span> postgresql-setup initdb</span><br><span class="line"><span class="built_in">sudo</span> systemctl start postgresql</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> postgresql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登录PostgreSQL</span></span><br><span class="line"><span class="comment"># 切换到postgres用户</span></span><br><span class="line"><span class="built_in">sudo</span> -i -u postgres</span><br><span class="line"><span class="comment"># 登录数据库</span></span><br><span class="line">psql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建数据库</span></span><br><span class="line">CREATE DATABASE mydb;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建用户并授权</span></span><br><span class="line">CREATE USER myuser WITH PASSWORD <span class="string">&#x27;mypassword&#x27;</span>;</span><br><span class="line">GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 备份数据库</span></span><br><span class="line">pg_dump -U myuser mydb &gt; mydb_backup.sql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复数据库</span></span><br><span class="line">psql -U myuser mydb &lt; mydb_backup.sql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有数据库</span></span><br><span class="line">\l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用数据库</span></span><br><span class="line">\c mydb</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有表</span></span><br><span class="line">\dt</span><br></pre></td></tr></table></figure>
+<h2 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装MongoDB (需要添加MongoDB仓库)</span></span><br><span class="line"><span class="comment"># Ubuntu/Debian</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install -y mongodb-org</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS/RHEL</span></span><br><span class="line"><span class="built_in">sudo</span> yum install -y mongodb-org</span><br><span class="line"><span class="built_in">sudo</span> systemctl start mongod</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> mongod</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登录MongoDB</span></span><br><span class="line">mongo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有数据库</span></span><br><span class="line">show dbs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建/使用数据库</span></span><br><span class="line">use mydb</span><br><span class="line"></span><br><span class="line"><span class="comment"># 插入数据</span></span><br><span class="line">db.mycollection.insertOne(&#123;name: <span class="string">&quot;test&quot;</span>, value: 1&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询数据</span></span><br><span class="line">db.mycollection.find()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 备份数据库</span></span><br><span class="line">mongodump --db mydb --out /path/to/backup</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复数据库</span></span><br><span class="line">mongorestore --db mydb /path/to/backup/mydb</span><br></pre></td></tr></table></figure>
+<h1 id="数据库操作自动化脚本"><a href="#数据库操作自动化脚本" class="headerlink" title="数据库操作自动化脚本"></a>数据库操作自动化脚本</h1><h2 id="MySQL备份脚本-mysql-backup-bat-Windows"><a href="#MySQL备份脚本-mysql-backup-bat-Windows" class="headerlink" title="MySQL备份脚本 (mysql-backup.bat) - Windows"></a>MySQL备份脚本 (mysql-backup.bat) - Windows</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="comment">REM MySQL数据库备份脚本</span></span><br><span class="line"><span class="comment">REM 需要预先安装MySQL并配置环境变量</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> <span class="built_in">DATE</span>=<span class="variable">%date:~0,4%</span><span class="variable">%date:~5,2%</span><span class="variable">%date:~8,2%</span></span><br><span class="line"><span class="built_in">set</span> <span class="built_in">TIME</span>=<span class="variable">%time:~0,2%</span><span class="variable">%time:~3,2%</span><span class="variable">%time:~6,2%</span></span><br><span class="line"><span class="built_in">set</span> BACKUP_DIR=D:\db_backup</span><br><span class="line"><span class="built_in">set</span> DB_NAME=mydb</span><br><span class="line"><span class="built_in">set</span> DB_USER=root</span><br><span class="line"><span class="built_in">set</span> DB_PASS=mypassword</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 创建备份目录</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exist</span> <span class="variable">%BACKUP_DIR%</span> <span class="built_in">mkdir</span> <span class="variable">%BACKUP_DIR%</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 执行备份</span></span><br><span class="line">mysqldump -u <span class="variable">%DB_USER%</span> -p<span class="variable">%DB_PASS%</span> <span class="variable">%DB_NAME%</span> &gt; <span class="variable">%BACKUP_DIR%</span>\<span class="variable">%DB_NAME%</span>_<span class="variable">%DATE%</span>_<span class="variable">%TIME%</span>.sql</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="variable">%ERRORLEVEL%</span> <span class="keyword">EQU</span> <span class="number">0</span> (</span><br><span class="line">    <span class="built_in">echo</span> 备份成功: <span class="variable">%BACKUP_DIR%</span>\<span class="variable">%DB_NAME%</span>_<span class="variable">%DATE%</span>_<span class="variable">%TIME%</span>.sql</span><br><span class="line">) <span class="keyword">else</span> (</span><br><span class="line">    <span class="built_in">echo</span> 备份失败</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<p><strong>使用说明:</strong></p>
+<ol>
+<li>将上述代码保存为<code>mysql-backup.bat</code></li>
+<li>修改脚本中的数据库名称、用户名、密码和备份目录</li>
+<li>双击运行脚本或在命令行中执行</li>
+<li>备份文件将保存在指定目录，文件名包含时间戳</li>
+</ol>
+<h2 id="PostgreSQL自动备份脚本-pg-backup-sh-Linux-Mac"><a href="#PostgreSQL自动备份脚本-pg-backup-sh-Linux-Mac" class="headerlink" title="PostgreSQL自动备份脚本 (pg-backup.sh) - Linux/Mac"></a>PostgreSQL自动备份脚本 (pg-backup.sh) - Linux/Mac</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># PostgreSQL数据库备份脚本</span></span><br><span class="line"><span class="comment"># 需要预先安装PostgreSQL</span></span><br><span class="line"></span><br><span class="line">DATE=$(<span class="built_in">date</span> +%Y%m%d_%H%M%S)</span><br><span class="line">BACKUP_DIR=/path/to/backup</span><br><span class="line">DB_NAME=mydb</span><br><span class="line">DB_USER=myuser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建备份目录</span></span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="variable">$BACKUP_DIR</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行备份</span></span><br><span class="line">pg_dump -U <span class="variable">$DB_USER</span> <span class="variable">$DB_NAME</span> &gt; <span class="variable">$BACKUP_DIR</span>/$DB_NAME_<span class="variable">$DATE</span>.sql</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ $? -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;备份成功: <span class="variable">$BACKUP_DIR</span>/$DB_NAME_<span class="variable">$DATE</span>.sql&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;备份失败&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<p><strong>使用说明:</strong></p>
+<ol>
+<li>将上述代码保存为<code>pg-backup.sh</code></li>
+<li>赋予执行权限: <code>chmod +x pg-backup.sh</code></li>
+<li>修改脚本中的数据库名称、用户名和备份目录</li>
+<li>执行脚本: <code>./pg-backup.sh</code></li>
+<li>可添加到crontab实现定时备份: <code>crontab -e</code> 然后添加 <code>0 2 * * * /path/to/pg-backup.sh</code> (每天凌晨2点执行)</li>
+</ol>
+<h2 id="自动化开发流脚本"><a href="#自动化开发流脚本" class="headerlink" title="自动化开发流脚本"></a>自动化开发流脚本</h2><h3 id="Windows开发环境自动化脚本-dev-setup-bat"><a href="#Windows开发环境自动化脚本-dev-setup-bat" class="headerlink" title="Windows开发环境自动化脚本 (dev-setup.bat)"></a>Windows开发环境自动化脚本 (dev-setup.bat)</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="comment">REM 开发环境自动化设置脚本</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 创建项目目录</span></span><br><span class="line"><span class="built_in">mkdir</span> my-dev-project</span><br><span class="line"><span class="built_in">cd</span> my-dev-project</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 初始化Git仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> # 项目说明 &gt; README.<span class="built_in">md</span></span><br><span class="line">git add README.<span class="built_in">md</span></span><br><span class="line">git commit -m &quot;初始化项目&quot;</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 初始化前端项目 (Vue + Vite)</span></span><br><span class="line">npm create vite@latest frontend -- --template vue</span><br><span class="line"><span class="built_in">cd</span> frontend</span><br><span class="line">npm install</span><br><span class="line">npm install vue-router@<span class="number">4</span> pinia axios</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 创建后端项目目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"><span class="built_in">mkdir</span> backend</span><br><span class="line"><span class="built_in">cd</span> backend</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 初始化Node.js后端项目</span></span><br><span class="line">npm init -y</span><br><span class="line">npm install express cors dotenv</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 创建基础文件</span></span><br><span class="line"><span class="built_in">echo</span> const express = require(&#x27;express&#x27;); &gt; app.js</span><br><span class="line"><span class="built_in">echo</span> const app = express(); &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> const port = process.env.PORT || <span class="number">3000</span>; &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> app.get(&#x27;/&#x27;, (req, res) =&gt; &#123; &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span>   res.send(&#x27;Hello World!&#x27;); &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> &#125;); &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> app.listen(port, () =&gt; &#123; &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span>   console.log(`Server running on port $&#123;port&#125;`); &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> &#125;); &gt;&gt; app.js</span><br><span class="line"><span class="built_in">echo</span> &gt;&gt; app.js</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> PORT=<span class="number">3000</span> &gt; .env</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 返回项目根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 创建Docker Compose配置</span></span><br><span class="line"><span class="built_in">echo</span> version: &#x27;<span class="number">3</span>&#x27; &gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span> services: &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>   frontend: &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>     build: ./frontend &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>     ports: &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>       - &quot;<span class="number">8080</span>:<span class="number">80</span>&quot; &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>   backend: &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>     build: ./backend &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>     ports: &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="built_in">echo</span>       - &quot;<span class="number">3000</span>:<span class="number">3000</span>&quot; &gt;&gt; docker-compose.yml</span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">REM 完成设置</span></span><br><span class="line"><span class="built_in">echo</span> 开发环境设置完成！</span><br><span class="line"><span class="built_in">echo</span> 项目结构已创建，包含前端(Vue+Vite)和后端(Node.js+Express)</span><br><span class="line"><span class="built_in">echo</span> 可使用 &#x27;docker-compose up -d&#x27; 启动服务</span><br><span class="line"></span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h3 id="开发工作流自动化脚本-dev-flow-bat"><a href="#开发工作流自动化脚本-dev-flow-bat" class="headerlink" title="开发工作流自动化脚本 (dev-flow.bat)"></a>开发工作流自动化脚本 (dev-flow.bat)</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="comment">REM 开发工作流自动化脚本</span></span><br><span class="line"></span><br><span class="line">:menu</span><br><span class="line"><span class="built_in">cls</span></span><br><span class="line"><span class="built_in">echo</span> 开发工作流自动化工具</span><br><span class="line"> <span class="built_in">echo</span> ------------------------</span><br><span class="line"><span class="built_in">echo</span> <span class="number">1</span>. 启动开发服务器</span><br><span class="line"> <span class="built_in">echo</span> <span class="number">2</span>. 构建项目</span><br><span class="line"> <span class="built_in">echo</span> <span class="number">3</span>. 运行测试</span><br><span class="line"> <span class="built_in">echo</span> <span class="number">4</span>. 提交代码</span><br><span class="line"> <span class="built_in">echo</span> <span class="number">5</span>. 部署到测试环境</span><br><span class="line"> <span class="built_in">echo</span> <span class="number">6</span>. 退出</span><br><span class="line"> <span class="built_in">echo</span> ------------------------</span><br><span class="line"><span class="built_in">set</span> /p choice=请选择操作: </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">1</span> <span class="keyword">goto</span> <span class="built_in">start</span>-dev</span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">2</span> <span class="keyword">goto</span> build</span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">3</span> <span class="keyword">goto</span> test</span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">4</span> <span class="keyword">goto</span> commit</span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">5</span> <span class="keyword">goto</span> deploy-test</span><br><span class="line"><span class="keyword">if</span> <span class="variable">%choice%</span>==<span class="number">6</span> <span class="keyword">goto</span> <span class="keyword">exit</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 无效的选择，请重试。</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:<span class="built_in">start</span>-dev</span><br><span class="line"> <span class="built_in">echo</span> 启动前端开发服务器...</span><br><span class="line"> <span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> frontend &amp;&amp; npm run dev&quot;</span><br><span class="line"> <span class="built_in">echo</span> 启动后端开发服务器...</span><br><span class="line"> <span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> backend &amp;&amp; node app.js&quot;</span><br><span class="line"> <span class="built_in">echo</span> 开发服务器已启动。</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:build</span><br><span class="line"> <span class="built_in">echo</span> 构建前端项目...</span><br><span class="line"> <span class="built_in">cd</span> frontend</span><br><span class="line"> npm run build</span><br><span class="line"> <span class="keyword">if</span> <span class="variable">%ERRORLEVEL%</span> <span class="keyword">EQU</span> <span class="number">0</span> (</span><br><span class="line">  <span class="built_in">echo</span> 前端构建成功！</span><br><span class="line"> ) <span class="keyword">else</span> (</span><br><span class="line">  <span class="built_in">echo</span> 前端构建失败！</span><br><span class="line">  <span class="built_in">pause</span></span><br><span class="line">  <span class="keyword">goto</span> menu</span><br><span class="line"> )</span><br><span class="line"> <span class="built_in">cd</span> ..</span><br><span class="line"> <span class="built_in">echo</span> 构建完成。</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:test</span><br><span class="line"> <span class="built_in">echo</span> 运行前端测试...</span><br><span class="line"> <span class="built_in">cd</span> frontend</span><br><span class="line"> npm test</span><br><span class="line"> <span class="built_in">cd</span> ..</span><br><span class="line"> <span class="built_in">echo</span> 运行后端测试...</span><br><span class="line"> <span class="built_in">cd</span> backend</span><br><span class="line"> npm test</span><br><span class="line"> <span class="built_in">cd</span> ..</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:commit</span><br><span class="line"> <span class="built_in">set</span> /p message=请输入提交信息: </span><br><span class="line"> git add .</span><br><span class="line"> git commit -m &quot;<span class="variable">%message%</span>&quot;</span><br><span class="line"> <span class="built_in">echo</span> 代码已提交。</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:deploy-test</span><br><span class="line"> <span class="built_in">echo</span> 部署到测试环境...</span><br><span class="line"><span class="comment"> REM 这里添加测试环境部署命令</span></span><br><span class="line"> <span class="built_in">echo</span> 部署完成。</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">goto</span> menu</span><br><span class="line"></span><br><span class="line">:<span class="keyword">exit</span></span><br><span class="line"> <span class="built_in">echo</span> 退出程序。</span><br><span class="line"> <span class="keyword">exit</span> /b <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建React应用</span></span><br><span class="line">npx create-react-app my-app</span><br><span class="line"><span class="built_in">cd</span> my-app</span><br><span class="line">npm start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用Vite创建React应用</span></span><br><span class="line">npm create vite@latest my-react-app -- --template react</span><br><span class="line"><span class="built_in">cd</span> my-react-app</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装路由</span></span><br><span class="line">npm install react-router-dom</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装状态管理</span></span><br><span class="line">npm install redux react-redux</span><br><span class="line">npm install @reduxjs/toolkit</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建生产版本</span></span><br><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<h2 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Django</span></span><br><span class="line">pip install django</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建项目</span></span><br><span class="line">django-admin startproject mysite</span><br><span class="line"><span class="built_in">cd</span> mysite</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建应用</span></span><br><span class="line">python manage.py startapp myapp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据库迁移</span></span><br><span class="line">python manage.py makemigrations</span><br><span class="line">python manage.py migrate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建超级用户</span></span><br><span class="line">python manage.py createsuperuser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行开发服务器</span></span><br><span class="line">python manage.py runserver</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装REST框架</span></span><br><span class="line">pip install djangorestframework</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://xhayane.top">XH-Ayane</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://xhayane.top/2025/07/24/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/">http://xhayane.top/2025/07/24/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xhayane.top" target="_blank">XHAYANEの小屋</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%92%8C%E5%91%BD%E4%BB%A4%E8%84%9A%E6%9C%AC/">自动化部署和命令脚本</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/07/24/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E3%80%903%E3%80%91/" title="前端学习【3】"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">前端学习【3】</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/09/20/u2w8Q45TqcpyLej.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XH-Ayane</div><div class="author-info__description">求知，探索，为自己放荡不羁的活着</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/178075368?spm_id_from=333.1007.0.0"><i></i><span>电波连接ing……</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/XH-Ayane" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://1398136448@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/178075368?spm_id_from=333.1007.0.0" target="_blank" title="bilbil"><i class="fab fa-bilibili" style="color: #FF66B2;"></i></a><a class="social-icon" href="https://www.pixiv.net/users/51121543" target="_blank" title="pixiv"><i class="fab fa-pixiv" style="color: #24292e;"></i></a><a class="social-icon" href="https://x.com/AyaneXh" target="_blank" title="twitter"><i class="fab fa-x-twitter" style="color: ;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到本站，本站仍在建设中，文章编写及其业余，正在努力加油</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">npm常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.</span> <span class="toc-text">基础操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">依赖管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C"><span class="toc-number">1.3.</span> <span class="toc-text">脚本执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.4.</span> <span class="toc-text">其他常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#pip%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">pip常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C-1"><span class="toc-number">2.1.</span> <span class="toc-text">基础操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C"><span class="toc-number">2.2.</span> <span class="toc-text">批量操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="toc-number">2.3.</span> <span class="toc-text">虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-1"><span class="toc-number">2.4.</span> <span class="toc-text">其他常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Bash%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">Git Bash常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%93%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="toc-number">3.1.</span> <span class="toc-text">仓库操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C"><span class="toc-number">3.2.</span> <span class="toc-text">分支操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9C"><span class="toc-number">3.3.</span> <span class="toc-text">远程操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">3.4.</span> <span class="toc-text">版本控制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Windows-CMD%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">4.</span> <span class="toc-text">Windows CMD常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C-2"><span class="toc-number">4.1.</span> <span class="toc-text">基础操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C"><span class="toc-number">4.2.</span> <span class="toc-text">目录操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-number">4.3.</span> <span class="toc-text">文件操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF"><span class="toc-number">4.4.</span> <span class="toc-text">系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C"><span class="toc-number">4.5.</span> <span class="toc-text">网络操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-2"><span class="toc-number">4.6.</span> <span class="toc-text">其他常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">5.</span> <span class="toc-text">Linux常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C-3"><span class="toc-number">5.1.</span> <span class="toc-text">基础操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">5.2.</span> <span class="toc-text">权限管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86"><span class="toc-number">5.3.</span> <span class="toc-text">系统管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C-1"><span class="toc-number">5.4.</span> <span class="toc-text">网络操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-number">5.5.</span> <span class="toc-text">包管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%A4%84%E7%90%86"><span class="toc-number">5.6.</span> <span class="toc-text">文件搜索与处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B"><span class="toc-number">5.7.</span> <span class="toc-text">压缩与解压</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-3"><span class="toc-number">5.8.</span> <span class="toc-text">其他常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E7%89%B9%E5%AE%9A%E5%91%BD%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">框架特定命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-js"><span class="toc-number">6.1.</span> <span class="toc-text">Vue.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-Boot"><span class="toc-number">6.2.</span> <span class="toc-text">Spring Boot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vite"><span class="toc-number">6.3.</span> <span class="toc-text">Vite</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">6.4.</span> <span class="toc-text">Docker常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">数据库常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL"><span class="toc-number">7.1.</span> <span class="toc-text">MySQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PostgreSQL"><span class="toc-number">7.2.</span> <span class="toc-text">PostgreSQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB"><span class="toc-number">7.3.</span> <span class="toc-text">MongoDB</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC"><span class="toc-number">8.</span> <span class="toc-text">数据库操作自动化脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC-mysql-backup-bat-Windows"><span class="toc-number">8.1.</span> <span class="toc-text">MySQL备份脚本 (mysql-backup.bat) - Windows</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PostgreSQL%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC-pg-backup-sh-Linux-Mac"><span class="toc-number">8.2.</span> <span class="toc-text">PostgreSQL自动备份脚本 (pg-backup.sh) - Linux&#x2F;Mac</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E5%BC%80%E5%8F%91%E6%B5%81%E8%84%9A%E6%9C%AC"><span class="toc-number">8.3.</span> <span class="toc-text">自动化开发流脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC-dev-setup-bat"><span class="toc-number">8.3.1.</span> <span class="toc-text">Windows开发环境自动化脚本 (dev-setup.bat)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC-dev-flow-bat"><span class="toc-number">8.3.2.</span> <span class="toc-text">开发工作流自动化脚本 (dev-flow.bat)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#React"><span class="toc-number">8.4.</span> <span class="toc-text">React</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Django"><span class="toc-number">8.5.</span> <span class="toc-text">Django</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/24/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/" title="开发常用命令速查">开发常用命令速查</a><time datetime="2025-07-24T14:25:00.000Z" title="发表于 2025-07-24 14:25:00">2025-07-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/24/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E3%80%903%E3%80%91/" title="前端学习【3】">前端学习【3】</a><time datetime="2025-07-24T14:25:00.000Z" title="发表于 2025-07-24 14:25:00">2025-07-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/22/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E3%80%902%E3%80%91/" title="前端学习【2】">前端学习【2】</a><time datetime="2025-07-22T14:25:00.000Z" title="发表于 2025-07-22 14:25:00">2025-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0%E9%A2%98%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89/" title="数据库基础练习题（完整版）">数据库基础练习题（完整版）</a><time datetime="2025-07-22T10:00:00.000Z" title="发表于 2025-07-22 10:00:00">2025-07-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/07/17/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E3%80%901%E3%80%91/" title="前端学习【1】">前端学习【1】</a><time datetime="2025-07-17T14:25:00.000Z" title="发表于 2025-07-17 14:25:00">2025-07-17</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2024/11/05/Ilzbr3XJBLg9e4S.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By XH-Ayane</div><div class="footer_custom_text">Melancholy and silence define me, but I aim to be my own light.<p><a target="_blank" href="https://hexo.io/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script async src="/js/title.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="/js/fps.js"></script><script defer src="/js/cursor.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/07/14/java快速学习速查（7）[进阶篇]/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-07-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/07/14/java快速学习速查（7）[进阶篇]/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（7）[进阶篇]</a><div class="blog-slider__text">JBDC,SQL对象,数据库工具类，DAO结构,反射详解，注解详解</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/07/14/java快速学习速查（7）[进阶篇]/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/07/09/java快速学习速查（6）[进阶篇]/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-07-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/07/09/java快速学习速查（6）[进阶篇]/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（6）[进阶篇]</a><div class="blog-slider__text">涉及文件，IO流，线程，锁，网络编程等</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/07/09/java快速学习速查（6）[进阶篇]/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（1）</a><div class="blog-slider__text">涉及Java基础语法，注释，对象和类，基本数据类型</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（1）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（2）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（2）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（2）</a><div class="blog-slider__text">变量类型，变量命名规则，修饰符，运算符</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（2）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-31</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（3）</a><div class="blog-slider__text">循环结构，条件语句，switch case,Number&amp;Math,Character,String,StringBuffer几个方面</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/03/31/java快速学习速查（3）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（4）</a><div class="blog-slider__text">数组，日期时间，正则表达式，方法，构造方法，Stream和File和IO，scanner类，异常处理</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（4）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt="">java快速学习速查（5）</a><div class="blog-slider__text">Java面向对象部分的全部数据类型，继承，重载，多态，抽象类，封装，接口，枚举，包，反射</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2025/04/01/java快速学习速查（5）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
